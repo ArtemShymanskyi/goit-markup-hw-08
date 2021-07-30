@@ -1,6 +1,40 @@
+
 .container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-  }
+         width: 480px;
+         padding-left: 15px;
+         padding-right: 15px;
+         margin-left: auto;
+         margin-right: auto;
+      }
+    
+
+
+
+    // // tablet-styles //
+    
+   
+    // @media (min-width: 768px) {
+    //   .container {
+    //     width: 738px;
+    //      padding-left: 15px;
+    //      padding-right: 15px;
+    //      margin-left: auto;
+    //      margin-right: auto;
+    //   }
+    // }
+
+
+
+// desktop-styles //
+// @media screen and (min-width: 1200px) {
+  
+//   .container {
+    
+//     width: 1200px;
+//     margin-left: auto;
+//     margin-right: auto;
+//  }
+   
+
+  
+
