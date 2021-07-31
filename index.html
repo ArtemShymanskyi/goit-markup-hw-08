@@ -18,8 +18,8 @@
 
 <body>
 
-    <!-- HEADER -->
-    <!-- <header class="header">
+                                   <!-- HEADER -->
+     <header class="header">
       <div class="container header-container"> 
         <nav class="navigation">
             <a class="logo link animate__bounce" href="./index.html" lang="en">
@@ -28,13 +28,18 @@
 
             <ul class="nav list">
 
-                <li class="space"><a href="./index.html" class="link current current-studio">Cтудия</a> </li>
-                <li class="space"><a href="./portfolio.html" class="link">Портфолио</a> </li>
-                <li class="space"><a href="#" class="link">Контакты</a> </li>
+                <li class="nav-item"><a href="./index.html" class="link current current-studio">Cтудия</a> </li>
+                <li class="nav-item"><a href="./portfolio.html" class="link">Портфолио</a> </li>
+                <li class="nav-item"><a href="#" class="link">Контакты</a> </li>
             </ul>
 
         </nav>
-
+       <button type="button" class="burger-btn" data-menu-open>
+           <svg class="burger-btn__icon">
+               <use href="./images/sprite.svg#icon-close-black-18dp-2-1">
+               </use>
+           </svg>
+       </button>
         <ul class="contacts-top">
             <li class="header-contacts">
                 <a href="mailto:info@devstudio.com" class="link mail-link">
@@ -52,16 +57,67 @@
             </li>
         </ul>
     </div>
+
+    <div class="mobile-menu" data-menu> 
+        <div class="container mobile-menu__container">
+            <button class="close-btn .mobile-menu__close-btn" data-menu-close>
+                <svg class="close-btn__icon">
+                    <use href="./images/sprite.svg#icon-close-black-18dp-2-1">
+    
+                    </use>
+                </svg>
+            </button>  
+
+        <ul class="nav-list">
+            <li class="nav-list__item">
+                <a href="" class="nav-list__link">Cтудия</a>
+            </li>
+            <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Портфолио</a>
+            </li>
+            <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Контакты</a>
+            </li>
+        </ul>
+
+        <ul class="mobile-menu__contacts-top">
+            <li class="mobile-menu__header-contacts">
+                <a href="mailto:info@devstudio.com" class="mobile-menu__link">
+                 info@devstudio.com </a>
+            </li>
+            <li class="mobile-menu__header-contacts">
+                <a href="tel:+380961111111" class="mobile-menu__link">
+                    +38 096 111 11 11</a>
+            </li>
+        </ul>
+
+        <ul class="social-list-mobile-menu">
+            <li class="social-list-mobile-menu__item">
+                <a href="" class="social-list-mobile-menu__link">Instagram</a>
+            </li>
+            <li class="social-list-mobile-menu__item">
+                <a href="#" class="social-list-mobile-menu__link">Twitter</a>
+            </li>
+            <li class="social-list-mobile-menu__item">
+                <a href="#" class="social-list-mobile-menu__link">Facebook</a>
+            </li>
+            <li class="social-list-mobile-menu__item">
+                <a href="#" class="social-list-mobile-menu__link">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+        
+    </div>
     </header>
-    <main class="main-page"> -->
-        <!-- HERO
+    <main class="main-page"> 
+        <!-- HERO -->
         <section class="hero">
             <div class="container">
             <h1 class="hero-title"> Эффективные решения <br> для вашего бизнеса</h1>
 
             <button class="hero-btn" type="button" data-modal-open> Заказать услугу </button>
             </div>
-        </section> -->
+        </section>
         
         
         <section class="advantages section">
@@ -502,7 +558,7 @@
       
     </footer> -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             
             <button type="button" class="close-btn" data-modal-close>
@@ -554,7 +610,8 @@
             </form>
         </div>
     </div>
-<script src="./js/modal.js"></script> -->
+<script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
