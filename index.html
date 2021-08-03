@@ -119,6 +119,7 @@
             </div>
         </section>
         
+        <!-- Advantages section -->
         
         <section class="advantages section">
         <div class="container">
@@ -176,7 +177,7 @@
             </ul>
         </div>
         </section>
-        <!-- Чем мы занимаемся
+        <!-- About section -->
         <section class="about section">
            <div class="container">
             <h2 class="about-title"> Чем мы занимаемся </h2>
@@ -184,7 +185,7 @@
             <ul class="about-container">
                 <li class="about-container__item">
                  <div class="about-container__wrapper"> 
-                    <img class="about-container__img" src="./images/pc.jpg" alt="человек с компьютером" width="370" height="294" />
+                    <img class="about-container__img" src="./images/pc1x.jpg" alt="человек с компьютером" width="370" height="294" />
                     <p class="about-container__overlay">Декстопные приложения</p>
                  </div>
                 </li>
@@ -206,8 +207,8 @@
                 </li>
             </ul>
             </div>
-        </section> -->
-        <!-- Список команды
+        </section>
+        <!-- Team-section -->
         <section class="team-section section">
          <div class="container">
             <h2 class="team-title"> Наша команда</h2>
@@ -215,8 +216,28 @@
             <ul class="team-container">
 
                 <li class="team-container__card">
-                    
-                    <img class="team-container__img" src="./images/igor.jpg" alt="член команды Игорь" width="270" height="260">
+                    <picture class="team-img">
+
+                        <source media="(min-width: 1200px)"
+                            srcset="./images/igor-desktop-w.webp 1x, ./images/igor-desktop-w@2x.webp 2x"
+                            type="image/webp">
+                        <source media="(min-width: 1200px)"
+                            srcset="./images/igor-desktop-j.jpg 1x, ./images/igor-desktop-j@2x.jpg 2x">
+
+                        <source media="(min-width: 768px)"
+                            srcset="./images/igor-tablet-w.webp 1x, ./images/igor-tablet-w@2x.webp 2x"
+                            type="image/webp">
+                        <source media="(min-width: 768px)"
+                            srcset="./images/igor-tablet-j.jpg 1x, ./images/igor-tablet-j@2x.jpg 2x">
+                           
+                            <source media="(max-width: 767px)"
+                            srcset="./images/igor-mobile-w.webp 1x, ./images/igor-mobile-w@2x.webp 2x"
+                            type="image/webp">
+                          <source media="(max-width: 767px)"
+                            srcset="./images/igor-mobile-j.jpg 1x, ./images/igor-mobile-j@2x.jpg 2x">
+
+                    <img class="team-container__img" src="#" alt="член команды Игорь">
+                </picture>
                 <div class="team-container__div">
                     <h3 class="team-container__name">Игорь Демьяненко</h3>
                     <p class="team-container__job">Product designer</p>
@@ -262,8 +283,27 @@
                 </li>
 
                 <li class="team-container__card">
+             <picture> 
                 
-                    <img class="team-container__img" src="./images/olga.jpg" alt="член команды Ольга" width="270" height="260">
+                <source media="(min-width: 1200px)"
+                    srcset="./images/olga-desktop-j.jpg 1x, ./images/olga-desktop-j@2x.jpg 2x">
+                
+
+                    <source media="(min-width: 768px)"
+                srcset="./images/olga-tablet-j.jpg 1x, ./images/olga-tablet-j@2x.jpg 2x">
+            
+
+                  
+                <source media="(max-width: 767px)"
+                    srcset="./images/olga-mobile-j.jpg 1x, ./images/olga-mobile-j@2x.jpg 2x">
+
+              
+              
+              
+                    <img class="team-container__img" src="#" alt="член команды Ольга">
+                
+                </picture>
+
                     <div class="team-container__div">
                         <h3 class="team-container__name">Ольга Репина</h3>
                          <p class="team-container__job">Frontend Developer</p>
@@ -309,9 +349,22 @@
                         </li>
 
                 <li class="team-container__card">
-            
-                    <img class="team-container__img" src="./images/nikolay.jpg" alt="член команды НИколай" width="270" height="260">
-        <div class="team-container__div"> 
+
+                    <picture> 
+                        <source media="(min-width: 1200px)"
+                            srcset="./images/nikolay-desktop-j.jpg 1x, ./images/nikolay-desktop-j@2x.jpg 2x">
+                        <source media="(min-width: 768px)"
+                        srcset="./images/nikolay-tablet-j.jpg 1x, ./images/nikolay-tablet-j@2x.jpg 2x">
+                    
+                          <source media="(max-width: 767px)"
+                            srcset="./images/nikolay-mobile-j.jpg 1x, ./images/nikolay-mobile-j@2x.jpg 2x">
+        
+                                   
+                    <img class="team-container__img" src="./images/nikolay.jpg" alt="член команды НИколай">
+               
+                </picture>
+
+                    <div class="team-container__div"> 
                     <h3 class="team-container__name">Николай Тарасов</h3>
                     <p class="team-container__job">Marketing</p>
                     <ul class="social-list">
@@ -357,8 +410,19 @@
 
                 <li class="team-container__card">
                    
-                    <img class="team-container__img" src="./images/misha.jpg" alt="член команды Михаил" width="270" height="260">
-                <div class="team-container__div">
+                    <picture> 
+                        <source media="(min-width: 1200px)"
+                            srcset="./images/misha-desktop-j.jpg 1x, ./images/misha-desktop-j@2x.jpg 2x">
+                        <source media="(min-width: 768px)"
+                        srcset="./images/misha-tablet-j.jpg 1x, ./images/misha-tablet-j@2x.jpg 2x">
+                    
+                          <source media="(max-width: 767px)"
+                            srcset="./images/misha-mobile-j.jpg 1x, ./images/misha-mobile-j@2x.jpg 2x">
+                   
+                    <img class="team-container__img" src="./images/misha.jpg" alt="член команды Михаил">
+                    
+                </picture>
+                    <div class="team-container__div">
                     <h3 class="team-container__name">Михаил Ермаков</h3>
                     <p class="team-container__job">UI Designer</p>
                     <ul class="social-list">
@@ -404,9 +468,9 @@
 
             </ul>
             </div>
-        </section> -->
+        </section>
                                    <!-- Постоянные клиенты -->
-     <!-- <section class="clients section">
+     <section class="clients section">
       <div class="container">
           <h2 class="subtitle">Постоянные клиенты</h2>
         <ul class="clients-list">
@@ -471,7 +535,7 @@
 
      </div>
   </section>
- </main> -->
+ </main>
                                                               <!-- FOOTER
     <footer class="footer">
         <div class="container">
