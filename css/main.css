@@ -102,20 +102,20 @@ a {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
     margin: 0 auto;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -149,6 +149,10 @@ a {
 .footer-social-list {
   display: flex;
   justify-content: space-between;
+  margin-top: 16px;
+  max-width: 204px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-social-link {
@@ -955,7 +959,7 @@ a {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/bg-phone-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-phone-2x.jpg);
   }
 }
 
@@ -967,19 +971,19 @@ a {
 
 @media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: url(../images/bg-tablet-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-tablet-2x.jpg);
   }
 }
 
 @media (min-width: 1200px) {
   .hero {
-    background-image: url(../images/bg-desktop-1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-desktop-1x.jpg);
   }
 }
 
 @media (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 1200px), (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url(../images/bg-desktop-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-desktop-2x.jpg);
   }
 }
 
@@ -1521,14 +1525,37 @@ a {
   vertical-align: middle;
 }
 
-/* Desktop */
-@media screen and (min-width: 1200px) {
-  .footer-social-box {
-    justify-content: center;
-    text-align: center;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .footer-social-list {
     display: flex;
+    justify-content: space-between;
+  }
+  .footer-social-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+  .btn-footer {
+    margin-top: 0;
+  }
+  .footer-wrapper {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-social-box {
+    margin-left: 70px;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-social-item:not(:last-child) {
+    margin-right: 10px;
   }
   .footer-social-link {
     display: flex;
@@ -1546,8 +1573,7 @@ a {
   }
   .div-input-wrapper {
     display: flex;
-    margin-top: 5px;
-    margin-left: 43px;
+    margin-left: auto;
     /* padding-right: 215px; */
   }
   .input-text {
