@@ -70,13 +70,16 @@
 
   @media (min-width: 768px) and (max-width: 1199px){
     .burger-btn{
-      display: none;}
+      display: none;
+    }
+
+
       .mobile-menu__header-contacts{
         margin-top: 32px;
       }
       .header {
-          padding-top: 26px;
-          padding-bottom: 26px;
+          padding-top: 21px;
+          padding-bottom: 21px;
           border: 1px solid #ececec;
         }
         
@@ -174,8 +177,7 @@
 
         .header-contacts{
         text-align: center;
-        margin-left: 106px;
-        padding-right: 15px;
+       
         }
         
         .header-contacts:not(:last-child) {
